@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Inter:wght@100;200;400;500;600&family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+    background-color: #fefefe;
+    box-shadow: 0.5px 0.5px 3px;
+}
+
+nav ul{
+    display: flex;
+    text-indent: 30px;
+    list-style: none;
+    font-family: 'Roboto';
+}
+
+.navbar #section-home{
+    text-decoration: none;
+}
