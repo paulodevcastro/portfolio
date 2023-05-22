@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body{
+    height: 100%;
+}
+
 /*navbar css*/
 
 .navbar{
@@ -14,6 +18,7 @@
     padding: 20px;
     background-color: #fefefe;
     box-shadow: 0.5px 0.5px 3px;
+    min-height: 100%;
 }
 
 nav ul{
@@ -89,10 +94,43 @@ nav ul{
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .small-description button:hover{
     background-color: #222222;
     transition: 0.5s;
 }
+
+/*high description*/
+.sub-card{
+    margin: 50px;
+}
+
+.high-description h1{
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 12px;
+    color: rgb(202, 98, 0);
+    text-align: center;
+    font-size: 40px;
+}
+
+.high-description p{
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+}
+
+.formation{
+    margin-top: 30px;
+}
+
+.formation h3{
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/*final card css*/

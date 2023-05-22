@@ -1,2 +1,2 @@
 # portfolio
-Portfolio do desenvolvedor
+Welcome! This is a portfolio created by a Java back-end developer, on the first page of the project, we have a navbar containing 3 sections, home, projects and contact, the home being the main one, it contains a card with a small description about the developer...
