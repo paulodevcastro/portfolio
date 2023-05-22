@@ -6,6 +6,8 @@
     box-sizing: border-box;
 }
 
+/*navbar css*/
+
 .navbar{
     margin-left: 50px;
     margin-right: 50px;
@@ -16,11 +18,81 @@
 
 nav ul{
     display: flex;
+    justify-content: flex-start;
     text-indent: 30px;
     list-style: none;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar a{
+    text-decoration: none;
 }
 
 .navbar #section-home{
+    color: rgb(202, 98, 0);
+    
+}
+
+.navbar #section-projects{
+    color: #222222;
+}
+
+.navbar #section-contact{
+    color: #222222;
+}
+
+.navbar #section-projects:hover{
+    color: rgb(202, 98, 0);
+    transition: 0.5s;
+}
+
+.navbar #section-contact:hover{
+    color: rgb(202, 98, 0);
+    transition: 0.5s;
+}
+
+/*whoami css*/
+.whoami{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 25px;
+    border-radius: 0.5em;
+    background-color: #fefefe;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-main{
+    padding: 40px;
+}
+
+.small-description h1{
+    font-family: 'Fira Code', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: #222222;
+}
+
+.small-description p{
+    font-family: 'Inter', sans-serif;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    font-size: 22px;
+}
+
+.small-description button{
+    background-color: rgb(202, 98, 0);
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
     text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.small-description button:hover{
+    background-color: #222222;
+    transition: 0.5s;
 }
