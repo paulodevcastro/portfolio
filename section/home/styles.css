@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Inter:wght@100;200;400;500;600&family=Roboto:wght@100;300;400;500&display=swap');
 
+/* css variants home section*/
+:root{
+    --orange: rgb(202, 98, 0);
+    --white: #fefefe;
+    --black: #222222;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -34,8 +41,7 @@ nav ul{
 }
 
 .navbar #section-home{
-    color: rgb(202, 98, 0);
-    
+    color: var(--orange);
 }
 
 .navbar #section-projects{
@@ -47,12 +53,12 @@ nav ul{
 }
 
 .navbar #section-projects:hover{
-    color: rgb(202, 98, 0);
+    color: var(--orange);
     transition: 0.5s;
 }
 
 .navbar #section-contact:hover{
-    color: rgb(202, 98, 0);
+    color: var(--orange);
     transition: 0.5s;
 }
 
@@ -62,7 +68,7 @@ nav ul{
     margin-right: 50px;
     margin-top: 25px;
     border-radius: 0.5em;
-    background-color: #fefefe;
+    background-color: var(--white);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -78,14 +84,13 @@ nav ul{
 }
 
 .small-description p{
-    font-family: 'Inter', sans-serif;
-    padding-top: 12px;
+    font-family: 'Courier New', Courier, monospace;
     padding-bottom: 10px;
-    font-size: 22px;
+    font-size: 30px;
 }
 
 .small-description button{
-    background-color: rgb(202, 98, 0);
+    background-color: var(--orange);
     border: none;
     border-radius: 0.5em;
     cursor: pointer;
@@ -102,35 +107,95 @@ nav ul{
     transition: 0.5s;
 }
 
-/*high description*/
+/*high description css*/
 .sub-card{
-    margin: 50px;
+    margin-top: 20px;
+}
+
+.container-img{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container-img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.high-description{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    border-radius: 1em;
+    padding: 30px;
 }
 
 .high-description h1{
     font-family: 'Inter', sans-serif;
-    margin-bottom: 12px;
-    color: rgb(202, 98, 0);
-    text-align: center;
-    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 45px;
 }
 
 .high-description p{
-    margin-left: 20%;
-    margin-right: 20%;
     font-family: 'Inter', sans-serif;
+    color: #222222;
+}
+
+.high-description li{
+    margin-top: 20px;
+    color: #222222;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
     font-size: 22px;
+    font-weight: 500;
+}
+
+.high-description button{
+    background-color: rgb(111, 0, 145);
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;
 }
 
 .formation{
     margin-top: 30px;
 }
 
-.formation h3{
-    font-family: 'Inter';
-    font-size: 20px;
-    font-weight: 400;
-    text-align: center;
+.img-formation-title{
+    display: flex;
+    justify-content: left;
+    text-align: justify;
 }
 
-/*final card css*/
+.img-formation-title h3{
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+.formation h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.formation p{
+    margin-top: 12px;
+}
+
+.skills{
+    margin-left: 60px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    font-weight: 300;
+}
