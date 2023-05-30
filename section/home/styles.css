@@ -5,6 +5,8 @@
     --orange: rgb(239, 136, 0);
     --white: #fefefe;
     --black: #222222;
+    --panta: #0f0f0ff1;
+    --grey: #c8c8c8;
 }
 
 * {
@@ -20,8 +22,6 @@ body {
 /*navbar css*/
 
 .navbar {
-    margin-left: 50px;
-    margin-right: 50px;
     padding: 20px;
     background-color: #fefefe;
     box-shadow: 0.5px 0.5px 3px;
@@ -118,19 +118,19 @@ nav ul {
     height: 100vh;
 }
 
-.title-terminal{
+.title-terminal {
     padding: 7px;
     background-color: #444444;
 }
 
-.title-terminal h5{
+.title-terminal h5 {
     color: var(--white);
     text-align: center;
     font-family: monospace;
     font-size: 16px;
 }
 
-.terminal-simulator .initial-topic{
+.terminal-simulator .initial-topic {
     display: flex;
     color: rgb(42, 255, 142);
     padding-top: 20px;
@@ -138,20 +138,20 @@ nav ul {
     font-weight: 400;
 }
 
-.terminal-simulator .initial-topic #simbols{
+.terminal-simulator .initial-topic #simbols {
     color: var(--white);
     font-family: monospace;
     font-size: 15px;
     font-weight: 400;
 }
 
-.terminal-simulator .show-lists{
+.terminal-simulator .show-lists {
     line-height: 20px;
     height: 20px;
     overflow: hidden;
 }
 
-.show-lists li{
+.show-lists li {
     color: var(--white);
     padding-left: 5px;
     list-style: none;
@@ -163,17 +163,17 @@ nav ul {
     font-size: 15px;
 }
 
-@keyframes slide{
-    100%{
+@keyframes slide {
+    100% {
         top: -80px;
     }
 }
 
-.show-lists li span{
+.show-lists li span {
     position: relative;
 }
 
-.show-lists li span::after{
+.show-lists li span::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -184,9 +184,67 @@ nav ul {
     background-color: var(--black);
 }
 
-@keyframes typing{
-    100%{
+@keyframes typing {
+    100% {
         left: 100%;
         margin: 0 -35px 0 35px;
     }
+}
+
+
+/* footer css*/
+footer {
+    background-color: var(--white);
+    width: 100%;
+    height: fit-content;
+    box-shadow: 0 0 0 1px var(--grey);
+}
+
+.footer-title {
+    font-family: 'Roboto', sans-serif;
+    color: var(--black);
+    text-align: center;
+    align-items: center;
+    padding-top: 18px;
+    padding-bottom: 20px;
+}
+
+.cards-footer {
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.follow-social-midias {
+    padding-left: 30px;
+}
+
+.follow-social-midias h3 {
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+#icons-midia {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.credits {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.credits a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.credits a:hover{
+    color: var(--orange);
+    transition: 0.5s;
 }
