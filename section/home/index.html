@@ -21,9 +21,9 @@
     <div class="whoami">
         <div class="card-main">
             <div class="small-description">
-                <h1>Paulo Guilherme de Castro</h1>
-                <p>Desenvolvedor Back-End Java</p>
-                <button type="menu" id="btn-know-more">Saiba Mais</button>
+                <h1>Desenvolvedor Back-End Java</h1>
+                <p>Paulo Guilherme de Castro</p>
+                <button type="menu" id="btn-know-more" onclick="showMenu()">Saiba Mais</button>
             </div>
         </div>
     </div>
@@ -38,8 +38,37 @@
                 <ul class="show-lists">
                     <li id="nf"><span>neofetch</span></li>
                     <li id="sss"><span>sudo show skills</span></li>
-                    <li id="ssc"><span>sudo show conhecimentos</span></li>
+                    <li id="ssc"><span>sudo show extras</span></li>
                 </ul>
+            </div>
+            <div class="neofetch-card">
+                <div class="apresentation">
+                    <h1>Olá! Eu sou</h1>
+                    <p>Paulo Guilherme de Castro Furtado</p>
+                    <hr>
+                </div>
+                <div id="trajetory">
+                    <p>Atualmente sou um desenvolvedor Back-End Java com Spring-Boot, desde 2020 venho buscando melhorar
+                        gradativamente meus conhecimentos no mundo da tecnologia, em 2021 tive a oportunidade de
+                        ingressar
+                        na multinacional Accenture, onde pudi ver e desenvolver aplicações de alta escalabilidade para
+                        os
+                        clientes da corporação.</p>
+                </div>
+            </div>
+            <div class="skills-card">
+                <h1>Aprendizados</h1>
+                <div class="grid-container">
+                    <div class="grid-item"><img src="../../assets/icons/spring-boot.svg" alt="spring-icon" style="width: 150px; height: 150px;"></div>
+                    <div class="grid-item"><img src="../../assets/icons/postgresql.svg" alt="postgres-icon" style="width: 150px; height: 150px;"></div>
+                    <div class="grid-item"><img src="../../assets/icons/mysql.svg" alt="mysql-icon" style="width: 150px; height: 150px;"></div>
+                    <div class="grid-item"><img src="../../assets/icons/jenkins.svg" alt="jenkins-icon" style="width: 150px; height: 150px;"></div>
+                    <div class="grid-item"><img src="../../assets/icons/azure.svg" alt="azure-icon" style="width: 150px; height: 150px;"></div>
+                    <div class="grid-item"><img src="../../assets/icons/jira.svg" alt="jira-icon" style="width: 150px; height: 150px;"></div>
+                </div>
+            </div>
+            <div class="extras-card">
+                <h1>Extras</h1>
             </div>
         </div>
     </div>
@@ -52,14 +81,15 @@
                             <img src="../../assets/icons/linkedin.svg" alt="linkedin-link" id="linkedin">
                         </a></p>
                     <p><a href="https://github.com">
-                        <img src="../../assets/icons/github.svg" alt="github-link">
-                    </a></p>
+                            <img src="../../assets/icons/github.svg" alt="github-link">
+                        </a></p>
                     <p><a href="https://youtube.com">
-                        <img src="../../assets/icons/youtube.svg" alt="youtube-link">
-                    </a></p>
+                            <img src="../../assets/icons/youtube.svg" alt="youtube-link">
+                        </a></p>
                     <p><a href="">
-                        <img src="../../assets/icons/discord.svg" alt="discord-link" style="width: 50px; height: 50px;">
-                    </a></p>
+                            <img src="../../assets/icons/discord.svg" alt="discord-link"
+                                style="width: 50px; height: 50px;">
+                        </a></p>
                 </div>
             </div>
             <div class="credits">
@@ -72,5 +102,6 @@
         </div>
     </footer>
 </body>
+<script src="scripts.js"></script>
 
 </html>
