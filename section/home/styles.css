@@ -68,9 +68,7 @@ nav ul {
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 25px;
-    border-radius: 0.5em;
-    background-color: var(--white);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
 }
 
 .card-main {
@@ -130,7 +128,7 @@ nav ul {
     background-color: var(--black);
     visibility: hidden;
     width: 100%;
-    height: 110vh;
+    height: 120vh;
     animation: appearHighDescription;
     transition-timing-function: ease;
 }
@@ -145,6 +143,11 @@ nav ul {
     text-align: center;
     font-family: monospace;
     font-size: 16px;
+}
+
+.article-dev{
+    display: block;
+    flex-direction: column;
 }
 
 .terminal-simulator .initial-topic {
@@ -209,10 +212,12 @@ nav ul {
 }
 
 .neofetch-card #trajetory{
-    padding-top: 15px;
+    padding-top: 25px;
     color: var(--white);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 18px;
+    text-align: start;
+    width: 50%;
 }
 
 @keyframes appearHighDescription{
@@ -225,11 +230,6 @@ nav ul {
     }
 }
 
-.skills-card{
-    text-align: center;
-    align-items: center;
-}
-
 .skills-card h1{
     padding-bottom: 12px;
     font-family: monospace, sans-serif;
@@ -239,17 +239,61 @@ nav ul {
 }
 
 .grid-container{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
+    display: flex;
+    
 }
 
-.grid-item{
+.grid-item:hover{
+    transition: transform .4s ease-in-out;
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.extras-card{
+    padding-top: 20px;
+    display: block;
+}
+
+.extras-card h1{
+    color: var(--white);
+    font-family: 'Roboto', sans-serif;
+    padding-left: 25px;
+}
+
+.gif-moment{
+    display: flex;
+    flex-direction: row;
     background-color: var(--white);
-    border: 1px solid rgba(17, 17, 17, 0.8);
-    padding: 20px;
-    margin: 20px;
-    border-radius: 0.5rem;
+    width: 400px;
+    margin-left: 25px;
+    border-radius: 0.5em;
+}
+
+.gif-moment img:hover{
+    cursor: pointer;
+}
+
+.gif-moment p{
+    margin-top: 12px;
+    padding-left: 25px;
+    padding-right: 13px;
+    margin-bottom: 12px;
+    color: var(--black);
+    font-family: 'Inter', sans-serif;
+    text-align: start;
+    font-size: 22px;
+}
+
+.universe-moment{
+    margin-top: 30px;
+    padding-left: 25px;
+}
+
+.universe-moment p{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: var(--white);
+    
 }
 
 /* footer css*/
@@ -279,6 +323,12 @@ footer {
     padding-left: 30px;
 }
 
+.icons-positions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .follow-social-midias h3 {
     font-family: 'Poppins';
     font-size: 20px;
@@ -291,6 +341,26 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+#icons-midia-linkedin:hover{
+    transition: transform .4s ease-in-out;
+    transform: scale(1.3);
+}
+
+#icons-midia-github:hover{
+    transition: transform .4s ease-in-out;
+    transform: scale(1.3);
+}
+
+#icons-midia-youtube:hover{
+    transition: transform .4s ease-in-out;
+    transform: scale(1.3);
+}
+
+#icons-midia-discord:hover{
+    transition: transform .4s ease-in-out;
+    transform: scale(1.3);
 }
 
 .credits {
