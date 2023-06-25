@@ -1,9 +1,5 @@
-// function to hide and show menu
-document.getElementById('btn-show-more');
+var buttonShowCards = document.getElementById("btn-know-more");
 
-function showMenu(aniterminal){
-    var terminal = document.querySelector('.sub-card');
-    if(terminal.checkVisibility = 'hidden'){
-        terminal.style.visibility = 'visible';
-    }
-}
+buttonShowCards.addEventListener("click", function(){
+    document.querySelector(".cards-dev").classList.toggle("show-cards");
+})
