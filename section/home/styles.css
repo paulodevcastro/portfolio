@@ -76,6 +76,19 @@ nav ul {
     backdrop-filter: blur(4px);
     margin: 50px;
     border-radius: 0.5rem;
+    display: block;
+}
+
+.whoami.showHighDescription{
+    animation: test 1.5s forwards;
+}
+
+@keyframes test{
+    100%{
+        transform: translateY(-100rem);
+        position: absolute;
+        top: 0;
+    }
 }
 
 .card-main {
@@ -138,8 +151,10 @@ nav ul {
 /*high description css*/
 .cards-dev {
     width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: none;
-    animation: fadein 1s;
+    animation: fadein 1.4s;
 }
 
 .cards-dev.show-cards{
@@ -159,6 +174,7 @@ nav ul {
     background-color: var(--black);
     width: 65%;
     height: 100%;
+    box-shadow: 12px 12px 8px var(--panta);
     border-radius: 0.5rem;
 }
 
@@ -177,6 +193,7 @@ nav ul {
 .terminal-simulator .initial-topic {
     display: flex;
     color: var(--green);
+    margin-left: 5px;
     padding-top: 20px;
     font-family: monospace;
     font-weight: 400;
@@ -336,6 +353,23 @@ nav ul {
     background-color: var(--dark-blue);
     width: 35px;
     height: 25px;
+}
+
+.btn-go-back button{
+    margin: 5px;
+    padding: 12px;
+    border: none;
+    background-color: var(--black);
+    color: var(--white);
+    font-family: monospace, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    transition: all 0.7s;
+}
+
+.btn-go-back button:hover{
+    cursor: pointer;
+    background-color: var(--green);
 }
 
 /* footer css*/
