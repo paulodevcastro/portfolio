@@ -7,16 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/icon" href="/assets/favicon_io/favicon.ico">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
 </head>
 
 <body>
     <nav class="navbar">
-        <ul>
-            <li><a href="" id="section-home">Home</a></li>
-            <li><a href="" id="section-projects">Projetos</a></li>
-            <li><a href="" id="section-contact">Contato</a></li>
-        </ul>
+        <div class="components-navbar">
+            <ul>
+                <li><a href="#" id="section-home">Home</a></li>
+                <li><a href="#" id="section-projects">Projetos</a></li>
+                <li><a href="#" id="section-contact">Contato</a></li>
+            </ul>
+            <a href="https://github.com/paulodevcastro"><i class="fab fa-github" aria-hidden="true"></i></a>
+        </div>
     </nav>
     <div class="whoami">
         <div class="card-main">
@@ -40,7 +46,7 @@
             </div>
             <div class="topic-description">
                 <div class="img-profile">
-                    <img src="../../assets/images/example-avatar.svg" alt="">
+                    <img src="../../assets/images/minha-face.jpeg" alt="">
                 </div>
                 <div class="datas-dev">
                     <h3>usuario@Portfolio</h3>
@@ -64,7 +70,11 @@
                         </div>
                         <div id="cpu">
                             <h5>CPU: </h5>
-                            <p>brain atom (upgradable at infinite)</p>
+                            <p>brain atom (upgradable to infinity)</p>
+                        </div>
+                        <div id="gpu">
+                            <h5>GPU: </h5>
+                            <p>glasses with high graus</p>
                         </div>
                     </div>
                     <!-- the div bellow represents the colors patterns of neofetch, l = line, c = column -->
@@ -82,55 +92,101 @@
                     </div>
                 </div>
             </div>
-            <div class="btn-go-back">
-                <button type="reset">exit</button>
+            <div class="go-back">
+                <h3>usuario@Portfolio</h3>
+                <div id="simbols">:~$</div>
+                <button>exit</button>
             </div>
         </div>
-        <div class="card-skills">
-            <div class="title">
-                
+        <section class="groups">
+            <div class="groups-header">
+                <h1>Grupos</h1>
             </div>
-        </div>
-    </div>
-
-    <footer>
-        <div class="cards-footer">
-            <div class="follow-social-midias">
-                <h3>Me siga nas redes socias</h3>
-                <div class="icons-positions">
-                    <div id="icons-midia-linkedin">
-                        <p><a href="https://www.linkedin.com/in/paulo-guilherme-797126214/">
-                                <img src="../../assets/icons/linkedin.svg" alt="linkedin-link" id="linkedin">
-                            </a></p>
+            <div class="conhecimentos-back-end">
+                <div class="card">
+                    <div class="card-icons">
+                        <img src="../../assets/icons/spring-boot.svg" alt="Imagem Spring Boot">
                     </div>
-                    <div id="icons-midia-github">
-                        <p><a href="https://github.com">
-                                <img src="../../assets/icons/github.svg" alt="github-link">
-                            </a></p>
+                    <div class="card-info">
+                        <h3>Spring Boot Java</h3>
+                        <p>Aplicações em alta escalabilidade utilizando os recursos do ecossistema Spring Boot</p>
+                        <button>Saiba Mais</button>
                     </div>
-                    <div id="icons-midia-youtube">
-                        <p><a href="https://youtube.com">
-                                <img src="../../assets/icons/reproduzir-youtube.svg" alt="youtube-link">
-                            </a></p>
+                </div>
+                <div class="card">
+                    <div class="card-icons">
+                        <img src="../../assets/icons/postgresql.svg" alt="Imagem PostgreSql">
                     </div>
-                    <div id="icons-midia-discord">
-                        <p><a href="">
-                                <img src="../../assets/icons/discord.svg" alt="discord-link"
-                                    style="width: 50px; height: 50px;">
-                            </a></p>
+                    <div class="card-info">
+                        <h3>PostgreSql</h3>
+                        <p>Consultas no banco de dados para checagem e atualização dos dados</p>
+                        <button>Saiba Mais</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icons">
+                        <img src="../../assets/icons/mysql.svg" alt="Imagem MySQL">
+                    </div>
+                    <div class="card-info">
+                        <h3>MySQL</h3>
+                        <button>Saiba Mais</button>
                     </div>
                 </div>
             </div>
-            <div class="credits">
-                <p>Icones - <a href="https://icons8.com/">Icons8</a></p>
-                <p>Imagens svg - <a href="https://undraw.co/">unDraw</a></p>
-                <p>Fotos - <a href="https://unsplash.com/pt-br">Unsplash</a></p>
+            <div class="conhecimentos-deploys-backlogs">
+                <div class="card">
+                    <div class="card-icons">
+                        <img src="../../assets/icons/azure.svg" alt="Imagem Microsoft Azure">
+                    </div>
+                    <div class="card-info">
+                        <h3>Microsoft Azure</h3>
+                        <p>Verificação e checagem de Tasks utilizando o Azure DevOps</p>
+                        <button>Saiba Mais</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icons">
+                        <img src="../../assets/icons/jira.svg" alt="Imagem Jira">
+                    </div>
+                    <div class="card-info">
+                        <h3>Jira</h3>
+                        <button>Saiba Mais</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icons">
+                        <img src="../../assets/icons/jenkins.svg" alt="Imagem jenkins">
+                    </div>
+                    <div class="card-info">
+                        <h3>Jenkins</h3>
+                        <p>Realização de CI e CD</p>
+                        <button>Saiba Mais</button>
+                    </div>
+                </div>
             </div>
+        </section>
+    </div>
+    <!--
+        <footer>
+        <div class="footer-content">
+            <h3>Portfolio do Desenvolvedor</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, accusamus. Dicta, aperiam neque labore
+                exercitationem tempore debitis in aliquid deserunt quidem voluptatibus, nesciunt ullam harum sequi quam,
+                at porro dolore.</p>
         </div>
-        <div class="footer-title">
+        <ul class="socials">
+            <li><a href="#" class="fab fa-linkedin"></a></li>
+            <li><a href="#" class="fab fa-reddit"></a></li>
+            <li><a href="#" class="fab fa-youtube"></a></li>
+        </ul>
+        <hr><br>
+        <div class="no-copy">
             <p>Copyright &copy; 2023 - Todos os direitos reservados</p>
+            <p>Desenvolvido por paulodevcastro</p>
         </div>
     </footer>
+    -->
+
 </body>
 <script src="scripts.js"></script>
 
